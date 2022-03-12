@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div id="cursor" class="cursor"></div>
+    <div id="content"></div>
+
+    <script src="./works.js"></script>
+    <script>
+        let mousePosX = 0,
+            mousePosY = 0,
+            mouseCircle = document.getElementById("cursor");
+
+        document.onmousemove = (e) => {
+            mousePosX = e.pageX;
+            mousePosY = e.pageY;
+        };
+
+        document.onmousedown = (e) => {
+            if (!mouseCircle.classList.contains('cursor-animate')) {
+                mouseCircle.classList.add('cursor-animate');
+            }
+            mouseCircle.style.animation = 'none';
+            mouseCircle.offsetHeight; /* trigger reflow */
+            mouseCircle.style.animation = null;
+        }
+
+        let delay = 6,
+            revisedMousePosX = 0,
+            revisedMousePosY = 0;
+
+        function delayMouseFollow() {
+            requestAnimationFrame(delayMouseFollow);
+
+            revisedMousePosX += (mousePosX - revisedMousePosX) / delay;
+            revisedMousePosY += (mousePosY - revisedMousePosY) / delay;
+
+            mouseCircle.style.top = revisedMousePosY + "px";
+            mouseCircle.style.left = revisedMousePosX + "px";
+        }
+        delayMouseFollow();
+    </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="pages.js"></script>
+</body>
+
+</html>
