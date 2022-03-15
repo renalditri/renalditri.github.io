@@ -1,7 +1,7 @@
 <div class="col-12 col-md-6" style="padding: 1rem 1rem">
     <div class="border-b pb-1 row gx-0">
         <div class="col-9 pe-3 col-xxl-9 d-flex">
-            <div class="d-flex align-items-center">__number__. </div>
+            <div class="d-flex align-items-end mb-2">__number__. </div>
             <h2 class="d-inline-block fw-bold heading-4 flex-fill flex-grow-1 ps-2">
                 __title__
             </h2>
@@ -19,7 +19,9 @@
     </div>
     <div class="row gx-0 py-3">
         <div class="col-12 col-md-6">
-            <div class="rounded-4 img-background" style="background-image: url('__image__');"></div>
+            <button class="rounded-4 img-background border-0 bg-transparent" 
+            style="background-image: url('__image__');"
+            data-bs-toggle="modal" data-bs-target="#img-modal" data-bs-src="__image__"></button>
         </div>
         <div class="col-12 col-md-6 ps-3 d-flex flex-column justify-content-between">
             <p>

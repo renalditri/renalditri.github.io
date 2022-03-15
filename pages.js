@@ -64,7 +64,7 @@ function addCard(isHome, text, tags_text) {
 
   function addData(item, index) {
     return text.replace('__title__', item.title)
-      .replace('__image__', item.image)
+      .replaceAll('__image__', item.image)
       .replace('__url__', item.url)
       .replace('__content__', item.content)
       .replace('__href__', item.href)
@@ -80,6 +80,20 @@ function addCard(isHome, text, tags_text) {
     return html;
   }
 }
+
+const imgModal = document.getElementById('img-modal')
+imgModal.addEventListener('show.bs.modal', function (event) {
+  // Button that triggered the modal
+  const button = event.relatedTarget
+  // Extract info from data-bs-* attributes
+  const recipient = button.getAttribute('data-bs-src')
+  // If necessary, you could initiate an AJAX request here
+  // and then do the updating in a callback.
+  //
+  // Update the modal's content.
+  const modalTitle = imgModal.querySelector('.img-fluid')
+  modalTitle.src = recipient;
+})
 
 document.addEventListener('DOMContentLoaded', () => {
   let page = (window.location.hash.substring(1)) ? window.location.hash.substring(1) : window.location.pathname;

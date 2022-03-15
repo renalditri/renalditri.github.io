@@ -2,10 +2,10 @@ const works = [
   {
     title: "Match Your Spotify",
     image: "../img/match-taste.png",
-    content: "asldnalsdnlskand",
+    content: "A side project I made to understand how Spotify API works",
     url: "https://github.com/renalditri/Match-spotify-taste",
     href: "https://match-taste.herokuapp.com/",
-    tags: ["NodeJs"]
+    tags: ["NodeJs", "ExpressJS", "Bootstrap"]
   },
   {
     title: "Porfolio Website",
@@ -13,30 +13,30 @@ const works = [
     content: "asldnalsdnlskand",
     url: "https://github.com/renalditri/renalditri.github.io",
     href: "https://renalditri.github.io/",
-    tags: ["NodeJs"]
+    tags: ["Bootstrap"]
   },
   {
     title: "Sugosha Apotek E-commerce",
     image: "../img/sugosha.png",
-    content: "Projek bla bla bla bla bla",
+    content: "An E-commerce website made for Sugosha Pharmacy based in Bali. This project was used as my graduation project for my degree",
     url: "https://github.com/renalditri/Apotek-Sugosha-Web",
     href: "https://sugosha-web.herokuapp.com/#/",
-    tags: ["NodeJs"]
+    tags: ["NodeJS", "ExpressJS", "Bootstrap", "SQL"]
   },
   {
     title: "Wedding Invitation Website 1",
     image: "../img/pink.png",
-    content: "akjsdkajsdbjksbdjksbdjkabjkdsjkdbad",
+    content: "A wedding invitation website template currently used as",
     url: "https://github.com/renalditri/weddinginv-pink-themed",
     href: "https://renalditri.github.io/weddinginv-pink-themed/",
-    tags: ["NodeJs"]
+    tags: ["Bootstrap*", "PHP"]
   },
   {
     title: "Wedding Invitation Website 2",
     image: "../img/earth.png",
-    content: "akjsdkajsdbjksbdjksbdjkabjkdsjkdbad",
+    content: "A wedding invitation website I made for a friend, the current template",
     url: "https://github.com/renalditri/weddinginv-earth-tone",
     href: "https://renalditri.github.io/weddinginv-earth-tone/",
-    tags: ["NodeJs"]
+    tags: ["Bootstrap*", "PHP"]
   },
 ]
