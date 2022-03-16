@@ -69,7 +69,8 @@ function addCard(isHome, text, tags_text) {
       .replace('__content__', item.content)
       .replace('__href__', item.href)
       .replace('__tags__', addTags(item.tags))
-      .replace('__number__', index.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false }));
+      .replace('__number__', index.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false }))
+      .replace('__index__', index - 1);
   }
 
   function addTags(tags) {
@@ -83,16 +84,20 @@ function addCard(isHome, text, tags_text) {
 
 const imgModal = document.getElementById('img-modal')
 imgModal.addEventListener('show.bs.modal', function (event) {
-  // Button that triggered the modal
-  const button = event.relatedTarget
-  // Extract info from data-bs-* attributes
-  const recipient = button.getAttribute('data-bs-src')
-  // If necessary, you could initiate an AJAX request here
-  // and then do the updating in a callback.
-  //
-  // Update the modal's content.
-  const modalTitle = imgModal.querySelector('.img-fluid')
-  modalTitle.src = recipient;
+  const button = event.relatedTarget,
+  recipient = button.getAttribute('data-bs-src'),
+  index = button.getAttribute('data-bs-index'),
+  modalImg = imgModal.querySelector('.img-fluid'),
+  modalTitle = imgModal.querySelector('#title'),
+  modalContent = imgModal.querySelector('#description'),
+  modalUrl = imgModal.querySelector('#url'),
+  modalHref = imgModal.querySelector('#href');
+
+  modalTitle.innerHTML = works[index].title;
+  modalContent.innerHTML = works[index].content;
+  modalHref.href = works[index].href;
+  modalUrl.href = works[index].url;
+  modalImg.src = recipient;
 })
 
 document.addEventListener('DOMContentLoaded', () => {

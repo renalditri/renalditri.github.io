@@ -1,25 +1,30 @@
 <div class="col-12 py-4 ps-3 border-bottom">
-    <div class="d-inline-block">
-        __number__.<h2 class="ps-2 mb-3 d-inline-block fw-semibold heading-3">__title__</h2>
-    </div>
-    <div class="d-inline-block float-end">
-        <a href="__href__" title="Link to website" target="__blank"
-            class="btn btn-outline-primary p-0 rounded-circle me-1" style="line-height: 0%;">
-            <i class="bi bi-link-45deg github-icon" style="line-height: 0%; font-size: 1.4rem;"></i>
-        </a>
-        <a href="__url__" title="Link to Github repository" target="__blank"
-            class="btn btn-outline-primary rounded-4 p-1 px-2 fw-semibold">
-            <i class="bi bi-github me-1"></i>Github
-        </a>
+    <div class="pb-1 row gx-0">
+        <div class="col-12 col-md-9 col-xxl-9 pe-3 d-flex">
+            <div class="d-flex align-items-end mb-2">__number__. </div>
+            <h2 class="d-inline-block fw-semibold heading-3 flex-fill flex-grow-1 ps-2">
+                __title__
+            </h2>
+        </div>
+        <div class="col-12 col-md-3 col-xxl-3 d-flex align-items-center justify-content-end">
+            <a href="__href__" title="Link to website" target="_blank"
+                class="btn btn-outline-primary p-0 rounded-circle me-1">
+                <i class="bi bi-link-45deg github-icon link-icon-card"></i>
+            </a>
+            <a href="__url__" title="Link to Github repository" target="_blank"
+                class="btn btn-outline-primary rounded-4 p-1 px-2 fw-semibold github-icon-card">
+                <i class="bi bi-github me-1"></i>Github
+            </a>
+        </div>
     </div>
     <div class="row">
-        <div class="col-5">
-            <button class="rounded-4 img-background border-0 bg-transparent" 
+        <div class="col-md-5 col-12">
+            <button class="rounded-4 img-background border-0 bg-transparent my-3 my-md-0" 
             style="background-image: url('__image__');"
-            data-bs-toggle="modal" data-bs-target="#img-modal" data-bs-src="__image__"></button>
+            data-bs-toggle="modal" data-bs-target="#img-modal" data-bs-src="__image__"  data-bs-index="__index__"></button>
         </div>
-        <div class="col-7 d-flex flex-column justify-content-between">
-            <p>
+        <div class="col-md-7 col-12 d-flex flex-column justify-content-between">
+            <p style="text-align: justify;">
                 __content__
             </p>
             <div>

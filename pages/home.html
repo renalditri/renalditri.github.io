@@ -1,8 +1,8 @@
 <div class="container min-vh-100 d-flex flex-column justify-content-between fade-in">
-    <div class="py-5 mb-5">
+    <div class="py-5 px-3 px-md-3">
         <div class="row w-100">
             <div class="col">
-                <p class="m-0 text-secondary">Hi, my name is </p>
+                <p class="m-0 text-secondary fw-medium">Hi, my name is </p>
                 <span class="heading-1 m-0 fw-semibold">Renaldi</span>
                 <div class="d-inline-block float-end">
                     <a href="" title="Link to Github repository"
@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="row w-100">
-            <div class="col-6">
+            <div class="col-md-7 col-12">
                 <p class="heading-3 border-bottom m-0 pb-3" style="font-weight: 400;">
                     I'm a web developer capable of developing <span class="fw-bold">front-end</span> and <span
                         class="fw-bold">back-end</span> using a variety
@@ -26,12 +26,12 @@
                 </p>
                 <div class="row py-3">
                     <div class="col-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="card-title text-secondary">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div class="card-title text-secondary heading-5 fw-semibold">
                                     Programming Languages
                                 </div>
-                                <div class="card-text">
+                                <div class="card-text fw-medium">
                                     <ul>
                                         <li>HTML</li>
                                         <li>Javascript</li>
@@ -44,12 +44,12 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="card-title text-secondary">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div class="card-title text-secondary heading-5 fw-semibold">
                                     Frameworks
                                 </div>
-                                <div class="card-text">
+                                <div class="card-text fw-medium">
                                     <ul>
                                         <li>NodeJS</li>
                                         <li>ExpressJS</li>
@@ -65,13 +65,13 @@
             </div>
         </div>
     </div>
-    <div class="heading-3 text-center vh-25 my-5">
+    <div class="heading-3 text-center pb-3">
         <a href="#work" class="d-inline flex-column" style="cursor: pointer; text-decoration: none; font-weight: 500;">
             WORK<br /><i class="bi bi-caret-down-fill"></i>
         </a>
     </div>
 </div>
-<div id="work" class="container-fluid py-3">
+<div id="work" class="container-fluid py-3 fade-in">
     <div class="row w-100 p-4">
         <div class="col-12 col-md-5">
             <p class="py-3 text-secondary heading-5">Work 2022</p>
@@ -83,67 +83,32 @@
                 </div>
             </div>
             <div class="row" id="works">
-                <div class="col-12 py-4 ps-3 border-bottom">
-                    <div class="d-inline-block">
-                        01.<h2 class="ps-2 mb-3 d-inline-block fw-bold heading-3">Match Spotify Taste</h2>
-                    </div>
-                    <div class="d-inline-block float-end">
-                        <div title="Link to website" class="btn btn-outline-primary rounded-4 p-1 rounded-circle me-1"
-                            style="border-width: 2px;">
-                            <i class="bi bi-link-45deg heading-5"></i>
-                        </div>
-                        <button title="Link to Github repository"
-                            class="btn btn-outline-primary rounded-4 p-1 px-2 fw-bold" style="border-width: 2px;">
-                            <i class="bi bi-github me-1"></i>Github
-                        </button>
-                    </div>
-                    <div class="row">
-                        <div class="col-5">
-                            <div class="rounded-4 img-background"
-                                style="background-image: url('./img/match-taste.png');"></div>
-                        </div>
-                        <div class="col-7 d-flex flex-column justify-content-between">
-                            <p>
-                                A side project made using Spotify Web API
-                            </p>
-                            <div>
-                                <p class="mb-1">Tags</p>
-                                <div class="btn btn-outline-primary py-0 px-1"
-                                    style="font-size: 0.9rem; font-weight: normal; border-width: 2px;">
-                                    NodeJs
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 py-3 border-bottom">
-                    asd
-                </div>
+                <!-- Taken from works.html -->
             </div>
             <div class="row">
-                <a href="/#/works" class="col-12 ps-1 py-3 heading-3 fw-bold">
+                <a href="/#/works" class="col-12 ps-1 py-3 heading-2 fw-bold">
                     See all my projects<i class="bi bi-arrow-right-circle ms-3"></i>
                 </a>
             </div>
         </div>
     </div>
 </div>
-<div class="container py-5 mb-3">
+<div class="container py-5 mb-3 fade-in">
     <div class="row p-5" style="border-top: 1px solid white; border-bottom: 1px solid white;">
-        <div class="col-6 px-5" id="contact">
-            <div class="heading-1 text-start fw-bold py-3 px-5 ">Interested in working together?</div>
+        <div class="col-12 col-md-6 px-md-5  mb-3" id="contact">
+            <div class="heading-1 text-start fw-bold py-md-3 px-md-5 ">Interested in working together?</div>
         </div>
-        <div class="col-6 d-flex flex-column align-items-center justify-content-evenly">
-            <a class="btn btn-outline-light heading-5 border-width-2 fw-semibold rounded-4" style="min-width: 8rem;"
-                target="__blank" href="mailto:renalditriananda@gmail.com">
+        <div class="col-12 col-md-6 d-flex flex-md-column flex-row align-items-center justify-content-evenly flex-wrap">
+            <a class="btn btn-outline-light heading-5 border-width-2 fw-semibold rounded-4 my-3 my-md-0" style="min-width: 8rem;"
+                target="_blank" href="mailto:renalditriananda@gmail.com">
                 Email <i class="bi bi-envelope-fill"></i>
             </a>
-            <a class="btn btn-outline-light heading-5 border-width-2 fw-semibold rounded-4" style="min-width: 8rem;"
-                target="__blank" href="https://www.linkedin.com/in/renalditri/">
+            <a class="btn btn-outline-light heading-5 border-width-2 fw-semibold rounded-4 my-3 my-md-0" style="min-width: 8rem;"
+                target="_blank" href="https://www.linkedin.com/in/renalditri/">
                 Linked <i class="bi bi-linkedin"></i>
             </a>
-            <a class="btn btn-outline-light heading-5 border-width-2 fw-semibold rounded-4" style="min-width: 8rem;"
-                target="__blank" href="https://renalditri.github.io/">
+            <a class="btn btn-outline-light heading-5 border-width-2 fw-semibold rounded-4 my-1 my-md-0" style="min-width: 8rem;"
+                target="_blank" href="https://renalditri.github.io/">
                 Github <i class="bi bi-github"></i>
             </a>
         </div>

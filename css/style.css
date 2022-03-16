@@ -11438,11 +11438,6 @@ textarea.form-control-lg {
     scale: 1;
   }
 }
-@media (min-width: 768px) {
-  .heading-4 {
-    font-size: 1.2rem;
-  }
-}
 .heading-1 {
   font-size: 3rem;
 }
@@ -11475,6 +11470,50 @@ textarea.form-control-lg {
   font-weight: 500;
 }
 
+.link-icon-card {
+  line-height: 0%;
+  font-size: 1.4rem;
+}
+
+.github-icon-card {
+  font-size: 1rem;
+}
+
+@media (max-width: 1367px) {
+  .heading-1 {
+    font-size: 2.25rem;
+  }
+
+  .heading-3 {
+    font-size: 1.3rem;
+  }
+
+  .heading-4 {
+    font-size: 1.2rem;
+  }
+
+  .heading-5 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .heading-2 {
+    font-size: 1.7rem;
+  }
+
+  .w-sm-100 {
+    width: 100%;
+  }
+
+  .link-icon-card {
+    line-height: 0%;
+    font-size: 1.2rem;
+  }
+
+  .github-icon-card {
+    font-size: 0.8rem;
+  }
+}
 body,
 html {
   margin: 0;

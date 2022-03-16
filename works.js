@@ -2,7 +2,7 @@ const works = [
   {
     title: "Match Your Spotify",
     image: "../img/match-taste.png",
-    content: "A side project I made to understand how Spotify API works",
+    content: "A side project made to understand how Spotify API works. It will show Top Artists and Genres from someone's public playlist and it can match their music taste with others",
     url: "https://github.com/renalditri/Match-spotify-taste",
     href: "https://match-taste.herokuapp.com/",
     tags: ["NodeJs", "ExpressJS", "Bootstrap"]
@@ -10,7 +10,7 @@ const works = [
   {
     title: "Porfolio Website",
     image: "../img/portfolio.png",
-    content: "asldnalsdnlskand",
+    content: "This portfolio website that you're currently at! It's made using mostly Bootstrap and native javascript to turn it into an SPA",
     url: "https://github.com/renalditri/renalditri.github.io",
     href: "https://renalditri.github.io/",
     tags: ["Bootstrap"]
@@ -26,17 +26,17 @@ const works = [
   {
     title: "Wedding Invitation Website 1",
     image: "../img/pink.png",
-    content: "A wedding invitation website template currently used as",
+    content: "A wedding invitation website template requested to be made for wedding invitation business",
     url: "https://github.com/renalditri/weddinginv-pink-themed",
     href: "https://renalditri.github.io/weddinginv-pink-themed/",
-    tags: ["Bootstrap*", "PHP"]
+    tags: ["Bootstrap*", "PHP", "SQL"]
   },
   {
     title: "Wedding Invitation Website 2",
     image: "../img/earth.png",
-    content: "A wedding invitation website I made for a friend, the current template",
+    content: "A wedding invitation website made for a friend, the current template is used for wedding invitation business",
     url: "https://github.com/renalditri/weddinginv-earth-tone",
     href: "https://renalditri.github.io/weddinginv-earth-tone/",
-    tags: ["Bootstrap*", "PHP"]
+    tags: ["Bootstrap", "PHP", "SQL"]
   },
 ]
