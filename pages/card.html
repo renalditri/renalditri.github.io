@@ -17,22 +17,21 @@
             </a>
         </div>
     </div>
-    <div class="row">
+    <button class="row border-0 bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#img-modal"
+        data-bs-src="__image__" data-bs-index="__index__">
         <div class="col-md-5 col-12">
-            <button class="rounded-4 img-background border-0 bg-transparent my-3 my-md-0" 
-            style="background-image: url('__image__');"
-            data-bs-toggle="modal" data-bs-target="#img-modal" data-bs-src="__image__"  data-bs-index="__index__"></button>
+            <div class="rounded-4 img-background my-3 my-md-0" style="background-image: url('__image__');"></div>
         </div>
         <div class="col-md-7 col-12 d-flex flex-column justify-content-between">
             <p style="text-align: justify;">
                 __content__
             </p>
             <div>
-                <p class="mb-1">Tags :</p>
-                <div>
+                <p class="mb-0 text-start">Tags :</p>
+                <div class="text-start">
                     __tags__
                 </div>
             </div>
         </div>
-    </div>
+    </button>
 </div>

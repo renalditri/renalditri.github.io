@@ -94,10 +94,11 @@ imgModal.addEventListener('show.bs.modal', function (event) {
   modalHref = imgModal.querySelector('#href');
 
   modalTitle.innerHTML = works[index].title;
-  modalContent.innerHTML = works[index].content;
+  modalContent.innerHTML = works[index].description;
   modalHref.href = works[index].href;
   modalUrl.href = works[index].url;
   modalImg.src = recipient;
+  document.getElementById('modal-scroll').scrollTo(0, 0);
 })
 
 document.addEventListener('DOMContentLoaded', () => {
